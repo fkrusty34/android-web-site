@@ -11,29 +11,37 @@
     <body>
 
         <header>
-            <div class="container">
-                <a href="../index.html"><img src="../media/logo.png" alt="Android"></a>
-                <ul>
-                    <li>
-                        <div class="dropdown">
-                            <a href="#" id="shells">Оболочки</a>
-                            <div class="dropdown-content">
-                                <a href="miui.html">MIUI</a>
-                                <a href="one_ui.html">One UI</a>
-                                <a href="emui.html">EMUI</a>
-                            </div>
-                        </div>
-                    </li>
-                    <li><a href="versions.html" id="versions">Версии</a></li>
-                    <li><a href="about.html" id ="aboutUs"></a></li>
-                </ul>
-            </div>
-        </header>
+			<div class="container">
+				<div class="logoblock"><a href="#"><img src="../media/logo.png" alt="Android"></a>
+				<img src="../media/bg/menu1.png" id="togglemenu"></div>
+				<ul class='topmenu'>
+					<li>
+						<div class="dropdown">
+							<a href="shells.html" id="shells">Оболочки</a>
+							<div class="dropdown-content">
+								<a href="miui.html">MIUI</a>
+								<a href="one_ui.html">One UI</a>
+								<a href="emui.html">EMUI</a>
+							</div>
+						</div>
+					</li>
+					<li><a href="versions.html" id="versions">Версии</a></li>
+					<li><a href="about.html" id="aboutUs"><span class="hideinlineblock">Инфо</span></a></li>
+				</ul>
+			</div>
+		</header>
 
         <div>
             <a class="blink" id="begin"></a>
             <div class="container">
                 <h1>Оболочки</h1>
+				<div class="hideblock">
+					<ul>
+						<li><a href="miui.html">MIUI</a></li>
+						<li><a href="one_ui.html">One UI</a></li>
+						<li><a href="emui.html">EMUI</a></li>
+					</ul>
+				</div>
                 <p>Оболочка ОС Android (или Android-подобная ОС) — операционная система на базе <a href="../index.html">Android</a>. Чаще всего
                     разрабатываются разработчиками мобильных устройств для своих же продуктов. Отличаются не только
                     графическим интерфейсом, но и расширенной/изменённой функциональностью.</p>
@@ -97,7 +105,7 @@
                     <span class="dot" onclick="currentSlide(7)"></span>
                 </div>
 
-                <script src="../js/script.js"></script>
+                <script src="../js/gallery.js"></script>
             </div>
         </div>
 
@@ -109,6 +117,7 @@
                 </ul>
             </div>
         </footer>
+		<script src="../js/script.js"></script>
 
     </body>
 

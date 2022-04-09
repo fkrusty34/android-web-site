@@ -64,7 +64,7 @@ header {
 	background-color: #002d3b;
 	position: sticky;
 	top: 0;
-	z-index:20;
+	z-index: 20;
 }
 
 
@@ -72,7 +72,7 @@ header .container,
 footer .container {
 	display: flex;
 	align-items: center;
-	justify-content:space-between;
+	justify-content: space-between;
 	max-width: 75%;
 }
 header ul, 
@@ -89,7 +89,7 @@ footer ul li {
 header a {
 	color: #ccc;
 	font-size: 0.8em;
-	text-decoration:none;
+	text-decoration: none;
 	padding: 12px 0 7px 30px;
 }
 header a:hover {
@@ -149,9 +149,7 @@ footer {
 
 /*ВСПЛЫВАЮЩИЕ ССЫЛКИ*/
 
-.data-tooltip,
-.data-tooltip:hover,
-.data-tooltip:active {
+.data-tooltip, .data-tooltip:hover, .data-tooltip:active {
 	color: #83ff9c;
 }
 
@@ -264,13 +262,13 @@ footer {
 /*МОБИЛЬНАЯ ВЕРСИЯ*/
 
 #togglemenu{
-	display:none;
+	display: none;
 }
 .hideblock{
-	display:none;
+	display: none;
 }
 .hideinlineblock{
-	display:none;
+	display: none;
 }
 
 @media(max-width: 800px){
@@ -278,26 +276,25 @@ footer {
 		flex-wrap: wrap;
 		flex-direction: column;
 		padding-top: 15px;
-		padding-bottom:15px;
+		padding-bottom: 15px;
 	}
-	.logoblock {
-		width:100%;
-	}
+
+	.logoblock {width: 100%;}
 	#togglemenu{display: block; float: right;}
 	.hideblock{display: block;}
-	.hideinlineblock{display:inline-block;}
+	.hideinlineblock{display: inline-block;}
 	.topmenu {
-		padding:0;
-		margin:0;
+		padding: 0;
+		margin: 0;
 		margin-left: -30px;
 		display:none;
 		clear: both;
 	}
-	.topmenu li {
-		display:inline-block;
-	}
-	.topmenu.vis {
-		display:block;
-	}
+	.topmenu li {display: inline-block;}
+	.topmenu.vis {display: block;}
+
 	.dropdown:hover .dropdown-content {display: none;}
+
+	.data-tooltip, .data-tooltip:hover, .data-tooltip:active {color: white;}
+	[data-tooltip]:hover::after {opacity: 0;}
 }
